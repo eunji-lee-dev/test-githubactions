@@ -1,0 +1,11 @@
+name: Test
+
+on: [ pull_request, push ]
+
+jobs:
+  test:
+    name: Check that the unut test are all passing
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Hello World
+        run: echo "Hello World!"
