@@ -7,5 +7,6 @@ jobs:
     name: Check that the unut test are all passing
     runs-on: ubuntu-20.04
     steps:
-      - name: Hello World
-        run: echo "Hello World!"
+      - name: Docker
+        run: docker run -d --name webserver -p 80:80 nginx:1.21.1
+
